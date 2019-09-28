@@ -46,6 +46,12 @@ export default new Router({
       component: () => import(/* webpackChunkName: "analytics" */ './pages/analytics.vue'),
     },
     {
+      path: '/event/:id',
+      name: 'event',
+      beforeEnter: authBeforeEnter,
+      component: () => import(/* webpackChunkName: "event" */ './pages/event.vue'),
+    },
+    {
       path: '/new-event',
       name: 'new-event',
       beforeEnter: authBeforeEnter,

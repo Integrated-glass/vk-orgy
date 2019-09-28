@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="profile-main">
     <Header/>
     <div class="section tint">
       <div class="container _444 w-container">
@@ -15,17 +15,21 @@
                     <img
                       src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
                       alt=""
-                      class="lightbox-close-icon">
+                      class="lightbox-close-icon"
+                    >
                   </a>
                   <img
                     src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52ea20075ae3408456f1_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%855.jpg"
                     alt=""
-                    class="portfolio-image"></div>
+                    class="portfolio-image"
+                  >
+                </div>
               </div>
               <a
                 href="#"
                 style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52ea20075ae3408456f1_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%855.jpg')"
-                class="portfolio-image-block w-inline-block">
+                class="portfolio-image-block w-inline-block"
+              >
                 <div class="portfolio-overlay-block" style="opacity: 0; display: none;">
                   <div class="portfolio-overlay-content-wrapper">
                     <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
@@ -49,16 +53,19 @@
                   <img
                     src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e5106d39dc0b52b93541c_b744c860c5281f28dbed34dd0ff3ea30.jpg"
                     alt=""
-                    class="portfolio-image">
+                    class="portfolio-image"
+                  >
                 </div>
               </div>
               <a
                 href="#"
                 style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e5106d39dc0b52b93541c_b744c860c5281f28dbed34dd0ff3ea30.jpg&')"
-                class="portfolio-image-block w-inline-block">
+                class="portfolio-image-block w-inline-block"
+              >
                 <div
                   class="portfolio-overlay-block"
-                  style="opacity: 0; display: none;">
+                  style="opacity: 0; display: none;"
+                >
                   <div class="portfolio-overlay-content-wrapper">
                     <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
                       Фестиваль 360
@@ -69,7 +76,8 @@
                     <div class="button text-button" style="transition: background-color 0.2s ease 0s; opacity: 0;">Просмотр</div>
                   </div>
                 </div>
-              </a></div>
+              </a>
+            </div>
             <div class="portfolio-item w-dyn-item w-col w-col-3">
               <div class="portfolio-lightbox-overlay" style="opacity: 0; display: none;">
                 <div class="portfolio-image-wrapper">
@@ -77,18 +85,21 @@
                     <img
                       src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
                       alt=""
-                      class="lightbox-close-icon">
+                      class="lightbox-close-icon"
+                    >
                   </a>
                   <img
                     src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52aed39dc0384e936800_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%851%C2%A0%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%203.jpg"
                     alt=""
-                    class="portfolio-image">
+                    class="portfolio-image"
+                  >
                 </div>
               </div>
               <a
                 href="#"
                 style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52aed39dc0384e936800_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%851%C2%A0%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%203.jpg')"
-                class="portfolio-image-block w-inline-block">
+                class="portfolio-image-block w-inline-block"
+              >
                 <div class="portfolio-overlay-block" style="opacity: 0; display: none;">
                   <div class="portfolio-overlay-content-wrapper">
                     <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
@@ -109,18 +120,21 @@
                     <img
                       src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
                       alt=""
-                      class="lightbox-close-icon">
+                      class="lightbox-close-icon"
+                    >
                   </a>
                   <img
                     src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52f8167af6767511841d_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%856.jpg"
                     alt=""
-                    class="portfolio-image">
+                    class="portfolio-image"
+                  >
                 </div>
               </div>
               <a
                 href="#"
                 style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52f8167af6767511841d_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%856.jpg')"
-                class="portfolio-image-block w-inline-block">
+                class="portfolio-image-block w-inline-block"
+              >
                 <div class="portfolio-overlay-block" style="opacity: 0; display: none; transition: opacity 300ms;">
                   <div class="portfolio-overlay-content-wrapper">
                     <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px); transform-style: preserve-3d; transition: opacity 300ms, transform 300ms;">
@@ -402,11 +416,19 @@
           </div>
         </div>
       </div>
-      <div class="simple-bottom-footer"></div>
+      <div class="simple-bottom-footer" />
     </div>
-
   </div>
 </template>
+
 <script>import Header from '@/components/header';
   export default {components: {Header}};
 </script>
+
+<style>
+  .profile-main header {
+    position: static !important;
+  }
+
+
+</style>
