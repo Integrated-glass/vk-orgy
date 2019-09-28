@@ -15,7 +15,7 @@
         <div class="text-block-3">Email: 360fest@polytech.com</div>
         <a href="#" class="button-6 w-button">Сгенерировать бейдж</a>
         <a href="#" class="button-6 w-button">Сгенерировать отчёт</a>
-        <a href="#" class="button-5 w-button">Рассчитать вес мероприятия</a>
+        <button @click="$emit('toggleModal')" type="button" class="button-5 w-button">Рассчитать вес мероприятия</button>
       </div>
       <div class="div-block-13 bb">
         <h1 class="heading-4">Политех 360</h1>

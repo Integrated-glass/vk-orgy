@@ -12,8 +12,8 @@
             <div class="dropdown-icon w-icon-dropdown-toggle" />
           </div>
           <nav :class="{'w--open': eventDrop}" class="dropdown-list w-dropdown-list">
-            <router-link :to="{name: 'event', params: {id: 1}}" class="dropdown-link w-dropdown-link">ВК Хакатон</router-link>
-            <router-link :to="{name: 'event', params: {id: 2}}" class="dropdown-link w-dropdown-link">Шахматный турнир</router-link>
+            <router-link :to="{name: 'event'}" class="dropdown-link w-dropdown-link">ВК Хакатон</router-link>
+            <router-link :to="{name: 'event'}" class="dropdown-link w-dropdown-link">Шахматный турнир</router-link>
           </nav>
         </div>
         <!--<router-link to="colleagues" class="nav-link light w-nav-link">Коллеги</router-link>
