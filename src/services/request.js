@@ -1,5 +1,5 @@
 import axios from 'axios';
-import store from '../store';
+import store from '@/store/index';
 import {API_HOST} from '../constants';
 
 const request = axios.create({

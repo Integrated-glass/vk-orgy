@@ -7,24 +7,27 @@
           <div class="w-row">
             <div class="fields-column-left w-col w-col-6">
               <input
+                v-model="firstName"
                 type="text"
                 name="first-name"
                 maxlength="256"
-                required=""
+                required
                 placeholder="Имя*"
                 class="dark-field sign-up w-input"
               >
               <input
+                v-model="org"
                 type="text"
                 name="first-name-2"
                 maxlength="256"
-                required=""
+                required
                 placeholder="Организация*"
                 class="dark-field sign-up w-input"
               >
             </div>
             <div class="fields-column-right w-col w-col-6">
               <input
+                v-model="lastName"
                 type="text"
                 name="last-name"
                 maxlength="256"
@@ -33,6 +36,7 @@
                 class="dark-field sign-up w-input"
               >
               <input
+                v-model="job"
                 type="text"
                 name="last-name-2"
                 maxlength="256"
@@ -43,22 +47,25 @@
             </div>
           </div>
           <input
+            v-model="phone"
             type="tel"
             name="phone"
             maxlength="256"
-            required=""
+            required
             placeholder="Телефон*"
             class="dark-field sign-up w-input"
           >
           <input
+            v-model="vk"
             type="text"
             name="vk"
             maxlength="256"
-            required=""
+            required
             placeholder="VK*"
             class="dark-field sign-up w-input"
           >
           <input
+            v-model="email"
             type="email"
             name="email"
             maxlength="256"
@@ -67,7 +74,7 @@
             class="dark-field sign-up w-input"
           >
           <input
-            id="password"
+            v-model="password"
             type="password"
             name="password"
             maxlength="256"
@@ -76,7 +83,7 @@
             class="dark-field sign-up w-input"
           >
           <input
-            id="password-repeat"
+            v-model="passwordRepeat"
             type="password"
             name="password-repeat"
             maxlength="256"
@@ -84,23 +91,25 @@
             placeholder="Повторите пароль*"
             class="dark-field sign-up w-input"
           >
-          <p class="contact-form-info-paragraph">Регистрируясь, вы соглашаетесь в нашей Политикой Конфиденциальности и Правилами Сервиса.</p>
+          <p class="contact-form-info-paragraph">
+            Регистрируясь, вы соглашаетесь в нашей Политикой Конфиденциальности и Правилами Сервиса.
+          </p>
           <div class="div-block-3">
-            <input
-              type="submit"
-              value="Зарегистрироваться"
+            <button
+              @click="submit"
+              type="button"
               class="button light w-button"
             >
+              Зарегистрироваться
+            </button>
           </div>
         </form>
-        <div class="success-message w-form-done">
-          <p>Thank you! Your submission has been received!</p>
-        </div>
-        <div class="error-bg w-form-fail">
-          <p>Oops! Something went wrong while submitting the form</p>
+        <div v-if="error" class="error-bg w-form-fail">
+          <p>{{ error }}</p>
         </div>
       </div>
     </div>
+
     <div class="full-sign-up-block right">
       <div data-ix="fade-in-on-scroll-2" class="sign-up-info-wrapper">
         <div class="sign-up-logos-wrapper">
@@ -138,8 +147,83 @@
   </div>
 </template>
 
+<script>
+  import {mapActions} from 'vuex';
+  import fetch from '@/services/fetch';
+
+  export default {
+    data() {
+      return {
+        firstName: '',
+        lastName: '',
+        org: '',
+        job: '',
+        phone: '',
+        vk: '',
+        email: '',
+        password: '',
+        passwordRepeat: '',
+        error: null,
+      };
+    },
+    methods: {
+      ...mapActions({
+        setToken: 'auth/saveToken',
+      }),
+      async submit() {
+        const error = this.validate();
+        if (error) {
+          this.error = error;
+        } else {
+          this.error = null;
+          const body = {
+            name: this.firstName,
+            surname: this.lastName,
+            email: this.email,
+            password: this.password,
+            company: this.org,
+            phone_number: this.phone,
+            social_link: this.vk,
+            position: this.job,
+          };
+          const res = await fetch('/organizers/register', 'POST', body);
+          if (res.detail) {
+            this.error = res.detail[0].msg || res.detail;
+          } else {
+            await this.setToken(res.access_token);
+            this.$router.push({name: 'profile'});
+          }
+        }
+      },
+      validate() {
+        let error = false;
+        if (!this.firstName || !this.lastName || !this.org
+          || !this.job || !this.vk || !this.phone || !this.email
+          || !this.password || !this.passwordRepeat) {
+          error = 'Не все обязательные поля заполнены';
+        } else if (this.password !== this.passwordRepeat) {
+          error = 'Пароли не совпадают';
+        } else if (this.phone.length !== 11) {
+          error = 'Номер телефона неподходящей длины';
+        } else if (!this.email.match(/.+@.+\..+/i)) {
+          error = 'Неверный адрес электронной почты';
+        } else if (!this.vk.match(/http?:\/\/.+\..+/i)) {
+          error = 'Ссылка на соцсеть должна выглядеть как http://vk.com/id3234';
+        } else if (!this.password.length > 7) {
+          error = 'Длина пароля не может быть меньше 8 символов';
+        }
+        return error;
+      }
+    }
+  };
+</script>
+
 <style>
   .full-sign-up-block {
     height: 100vh !important;
+  }
+
+  .w-form-fail {
+    display: block;
   }
 </style>

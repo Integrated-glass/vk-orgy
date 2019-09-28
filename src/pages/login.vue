@@ -9,20 +9,18 @@
             <div class="fields-column-right w-col w-col-6" />
           </div>
           <input
-            id="Email-3"
+            v-model="email"
             type="email"
             name="Email"
-            data-name="Email"
             maxlength="256"
             required=""
             placeholder="Email"
             class="dark-field sign-up w-input"
           >
           <input
-            id="Telephone-3"
+            v-model="password"
             type="password"
             name="Telephone-3"
-            data-name="Telephone 3"
             maxlength="256"
             required=""
             placeholder="Password"
@@ -30,19 +28,13 @@
           >
           <p class="contact-form-info-paragraph" />
           <div class="div-block-2">
-            <input
-              type="submit"
-              value="Войти"
-              data-wait="Please wait..."
-              class="button light w-button"
-            >
+            <button @click="submit" type="button" class="button light w-button">
+              Войти
+            </button>
           </div>
         </form>
-        <div class="success-message w-form-done">
-          <p>Thank you! Your submission has been received!</p>
-        </div>
-        <div class="error-bg w-form-fail">
-          <p>Oops! Something went wrong while submitting the form</p>
+        <div v-if="error" class="error-bg w-form-fail">
+          <p>{{ error }}</p>
         </div>
       </div>
     </div>
@@ -84,10 +76,56 @@
 </template>
 
 <script>
+  import {mapActions} from 'vuex';
+  import fetch from '@/services/fetch';
+
+  export default {
+    data() {
+      return {
+        email: '',
+        password: '',
+        error: null,
+      };
+    },
+    methods: {
+      ...mapActions({
+        setToken: 'auth/saveToken',
+      }),
+      async submit() {
+        const error = this.validate();
+        if (error) {
+          this.error = error;
+        } else {
+          this.error = null;
+
+          const body = `grant_type=&scope=&client_id=&client_secret=&username=${this.email}&password=${this.password}`;
+          const res = await fetch('/login/access-token', 'POST', body, true);
+
+          if (res.detail) {
+            this.error = res.detail[0].msg || res.detail;
+          } else {
+            await this.setToken(res.access_token);
+            this.$router.push({name: 'profile'});
+          }
+        }
+      },
+      validate() {
+        let error = false;
+        if (!this.email || !this.password) {
+          error = 'Не все обязательные поля заполнены';
+        }
+        return error;
+      }
+    }
+  };
 </script>
 
 <style>
   .full-sign-up-block {
     height: 100vh !important;
+  }
+
+  .w-form-fail {
+    display: block;
   }
 </style>

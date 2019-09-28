@@ -1,4 +1,4 @@
-import request from '../request';
+import request from './request';
 
 export default resource => ({
     index(query) {
@@ -44,11 +44,11 @@ export default resource => ({
     update(payload) {
         return request.put(`/${resource}/`, payload);
     },
-    
+
     updateInPath(path, payload) {
         return request.put(`/${resource}/${path}/`, payload);
     },
-    
+
     delete(id) {
         return request.delete(`/${resource}/${id}/`);
     },
