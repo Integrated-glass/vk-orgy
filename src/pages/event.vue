@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <div class="image-hero busines-2">
       <div class="hero-block-overlay business-2"></div>
     </div>
