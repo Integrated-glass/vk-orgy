@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <Header />
     <div><img src="/images/наверх.jpg" alt="" class="image-10"></div>
   </div>
