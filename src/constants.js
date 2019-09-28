@@ -1,1 +1,1 @@
-export const API_HOST = 'http://demo130.foxtrot.vkhackathon.com:80';
+export const API_HOST = 'https://demo130.foxtrot.vkhackathon.com';
