@@ -73,10 +73,10 @@
         }],
       weight: '93',
       org: "Политехнический музей",
-      project: "Фестивали под открытым небом",
+      project: "Науку Детям",
       email: "press@polymus.ru ;",
       place: 'Moscow',
-      dates: "19/05/2020 - 20/05/2020  ",
+      dates: "19/05/2020 - 20/05/2020",
       descr: "Масштабный научно-популярный проект под открытым небом от Политехнического музея. В выходные 19-20 мая фестиваль пройдет уже в шестой раз, и второй раз — на территории Парка Горького.",
       ageRestr: '10+',
       name:'Фестиваль Политех'
@@ -197,43 +197,43 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:10,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:2,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/руки_вверх.jpg',
     },
     {
       id:3,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:4,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:5,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:6,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:7,
@@ -241,7 +241,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:8,
@@ -249,7 +249,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
   ];
 
@@ -257,27 +257,27 @@
     {
       id:0,
       link:'https://vk.com/polytech.one1',
-      image:'',
+      image:'/images/vkontakte_PNG3.png',
     },
     {
       id:1,
       link:'https://www.facebook.com/polytech.one1/',
-      image:'',
+      image:'/images/fb.png',
     },
     {
       id:2,
       link:'https://polymus.ru/ru/',
-      image:'',
+      image:'/images/logoPoly.png',
     },
     {
       id:3,
       link:'https://polymus.ru/ru/news/',
-      image:'',
+      image:'/images/logoPoly.png',
     },
     {
       id:4,
       link:'https://www.instagram.com/polytech.one/',
-      image:'',
+      image:'/images/insta.png',
     }
   ];
 
@@ -341,7 +341,7 @@
       role:'Фотограф',
       length:140,
       width:140,
-      image:''
+      image:'/images/катя-огонь.jpg'
     },
     {
       id:1,
@@ -349,7 +349,7 @@
       role:'Ведущий дискуссии',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:2,
@@ -357,7 +357,7 @@
       role:'Стажёр-историк',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:3,
@@ -365,7 +365,7 @@
       role:'Консультант',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:4,
@@ -373,7 +373,7 @@
       role:'Аниматор',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:5,
@@ -381,7 +381,7 @@
       role:'Ведущий мастер-класса',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     }
   ];
 
