@@ -2,7 +2,6 @@
   <div class="section tint">
     <h1 class="heading-5">Роли</h1>
     <div class="pricing-row w-row">
-
       <div
         v-for="(role, i) in roles"
         :key="i"
@@ -52,3 +51,9 @@
     }
   };
 </script>
+
+<style scoped>
+  .pricing-row {
+    overflow-x: scroll;
+  }
+</style>
