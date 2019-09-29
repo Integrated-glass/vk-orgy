@@ -390,6 +390,7 @@
 <style>
   .event-main {
     background-color: white;
+    overflow-x: hidden;
   }
 
   .modal-overlay {
@@ -409,5 +410,4 @@
     align-items: center;
     justify-content: center;
   }
-
 </style>
