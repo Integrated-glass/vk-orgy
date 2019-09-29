@@ -8,10 +8,11 @@
     <EventWeight @toggleModal="toggleWeightModal" class="modal-overlay"/>
     <EventTodo/>
     <EventRoles :roles="roles"/>
-    <EventApplied />
+    <EventApplied :applied="applied"/>
     <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
     <EventSocials :socials="socials"/>
+    <EventAccepted :accepted="accepted"/>
   </div>
 </template>
 
@@ -25,6 +26,7 @@
   import EventApplied from '@/components/event/applied';
   import EventColleagues from '@/components/event/colleagues';
   import EventPartners from '@/components/event/partners';
+  import EventAccepted from "../components/event/accepted";
 
   const info = [{
     id: 1,
@@ -301,11 +303,113 @@
     }
   ];
 
-  const applied=[];
-  const accepted=[];
+  const applied=[
+    {
+      id:0,
+      fullname:"Алексеева Полина",
+      karma:83,
+      age:18,
+      experience:"Фотограф на публичных мероприятиях университета, монтирование видео",
+      role1:"Фотограф",
+      role2:"Консултант",
+      role3:"Ведущий дискуссии"
+    },
+    {
+      id:1,
+      fullname:"Кирик Александр",
+      karma:95,
+      age:41,
+      experience:"Помощь на хоккейных матчах,ведение лекции на научно-популярном мероприятии",
+      role1:"Ведущий мастер-класса",
+      role2:"Стажёр-историк",
+      role3:"Фотограф"
+    },
+    {
+      id:2,
+      fullname:"Олеж Инокентий",
+      karma:74,
+      age:27,
+      experience:"Консультирование участников конференции, работа на площадке, помощь в навигации",
+      role1:"Консультант",
+      role2:"Стажёр-историк",
+      role3:"Аниматор"
+    },
+    {
+      id:3,
+      fullname:"Светличная Олеся",
+      karma:88,
+      age:33,
+      experience:"Волонтёрство в детском дома, организация мероприятий на Новый год и другие праздники.",
+      role1:"Стажёр-историк",
+      role2:"Аниматор",
+      role3:"Консультант"
+    },
+    {
+      id:4,
+      fullname:"Сидиров Алексей",
+      karma:50,
+      age:51,
+      experience:"Консультант на площадке, постоянный волонтёр на экспозициях Гаража.",
+      role1:"Кольсунтант",
+      role2:"Ведущий мастер-класса",
+      role3:"Ведущий дискусстт"
+    }
+  ];
+
+  const accepted=[
+    {
+      id:0,
+      fullname:"Яковлева Мария",
+      role:'Фотограф',
+      length:140,
+      width:140,
+      image:''
+    },
+    {
+      id:1,
+      fullname:"Эль-Факи Мария",
+      role:'Ведущий дискуссии',
+      length:140,
+      width:140,
+      image:''
+    },
+    {
+      id:2,
+      fullname:"Щинова Анастасия",
+      role:'Стажёр-историк',
+      length:140,
+      width:140,
+      image:''
+    },
+    {
+      id:3,
+      fullname:"Щербатых Иван",
+      role:'Консультант',
+      length:140,
+      width:140,
+      image:''
+    },
+    {
+      id:4,
+      fullname:"Щербанюк Алёна",
+      role:'Аниматор',
+      length:140,
+      width:140,
+      image:''
+    },
+    {
+      id:5,
+      fullname:"Шубина Снежана",
+      role:'Ведущий мастер-класса',
+      length:140,
+      width:140,
+      image:''
+    }
+  ];
 
   export default {
     components: {
+      EventAccepted,
       EventPartners,
       EventColleagues,
       EventApplied,
