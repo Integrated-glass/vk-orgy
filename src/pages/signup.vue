@@ -207,7 +207,7 @@
           error = 'Номер телефона неподходящей длины';
         } else if (!this.email.match(/.+@.+\..+/i)) {
           error = 'Неверный адрес электронной почты';
-        } else if (!this.vk.match(/http?:\/\/.+\..+/i)) {
+        } else if (!this.vk.match(/https?:\/\/.+\..+/i)) {
           error = 'Ссылка на соцсеть должна выглядеть как http://vk.com/id3234';
         } else if (!this.password.length > 7) {
           error = 'Длина пароля не может быть меньше 8 символов';

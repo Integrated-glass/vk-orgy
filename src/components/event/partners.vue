@@ -41,7 +41,7 @@
         >
           <div class="div-block-15">
             <img
-              v-for="(partner, i) in partners.slice(3*index, 3*index + 3)"
+              v-for="(partner, i) in partners.slice(3*(index-1), 3*(index-1) + 3)"
               :key="i"
               :width="partner.width"
               :height="partner.length"

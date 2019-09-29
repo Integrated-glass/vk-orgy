@@ -8,7 +8,7 @@
     <EventWeight @toggleModal="toggleWeightModal" class="modal-overlay"/>
     <EventTodo/>
     <EventRoles :roles="roles"/>
-    <EventApplied/>
+    <EventApplied />
     <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
     <EventSocials :socials="socials"/>
