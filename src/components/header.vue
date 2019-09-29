@@ -25,23 +25,8 @@
 </template>
 
 <script>
-  import projectsQuery from '@/graphql/projects.graphql';
   export default {
     name: 'Header',
-    // apollo: {
-    //   projects() {
-    //     return {
-    //       query: projectsQuery,
-    //       variables: {
-    //         organizer_id: 6
-    //       },
-    //       update(data) {
-    //         console.log(data);
-    //         return [];
-    //       },
-    //     };
-    //   },
-    // },
     data() {
       return {
         eventDrop: false,
