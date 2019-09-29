@@ -301,6 +301,9 @@
     }
   ];
 
+  const applied=[];
+  const accepted=[];
+
   export default {
     components: {
       EventPartners,
@@ -321,7 +324,9 @@
         info,
         partners,
         colleagues,
-        socials
+        socials,
+        applied,
+        accepted
       };
     },
     methods: {
