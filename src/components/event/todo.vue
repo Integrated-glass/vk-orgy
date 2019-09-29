@@ -30,19 +30,14 @@
               <input
                 type="checkbox"
                 name="checkbox-2"
-                class="w-checkbox-input">
+                class="w-checkbox-input"
+              >
               <span class="checkbox-label w-form-label">Найти лектора</span>
             </label>
             <div class="text-block-14">x</div>
           </div>
         </div>
       </form>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
     </div>
   </div>
 </template>
