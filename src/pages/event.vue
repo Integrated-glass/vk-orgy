@@ -95,28 +95,28 @@
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/yandex.png",
     },
     {
       id:2,
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/Garagesvg.png",
     },
     {
       id:3,
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/msu.png",
     },
     {
       id:4,
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/Сколково.Logo_.png",
     },
     {
       id:5,
@@ -130,14 +130,14 @@
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/Сколково.Logo_.png",
     },
     {
       id:7,
       width:140,
       // link:,
       length:80,
-      logo:"/images/Postnauka-logo.png",
+      logo:"/images/yandex.png",
     }
   ];
   const roles = [
@@ -272,7 +272,7 @@
     {
       id:3,
       link:'https://polymus.ru/ru/news/',
-      image:'/images/logoPoly.png',
+      image:'/images/Icon-twitter.png',
     },
     {
       id:4,
