@@ -18,7 +18,7 @@
     <ul class="pricing-feature-list w-list-unstyled">
       <li class="pricing-feature-item">
         <div>
-          <a href="#" class="button-4 w-button">Редактировать</a>
+          <router-link to="new-event"  class="button-4 w-button">Редактировать</router-link>
         </div>
       </li>
     </ul>

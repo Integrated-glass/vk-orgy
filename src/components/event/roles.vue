@@ -13,7 +13,7 @@
               {{ role.name }}
               <br>
             </div>
-            <div class="pricing-block-price subtitle _88">{{ role.ageRestict }}+</div>
+            <div class="pricing-block-price subtitle _88">{{ role.ageRestict }}</div>
             <div class="pricing-block-price subtitle">
               {{role.descr}}
             </div>
@@ -35,7 +35,7 @@
             </li>
           </ul>
           <div class="pricing-block-content-wrapper bottom">
-            <a href="/contact/contact-3" class="button white-pricing-button w-button">Редактировать</a>
+            <router-link to="new-event" class="button-3 w-button">Редактировать</router-link>
           </div>
         </div>
       </div>
