@@ -9,7 +9,7 @@
     <EventTodo/>
     <EventRoles :roles="roles"/>
     <EventApplied/>
-    <EventColleagues/>
+    <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
     <EventSocials/>
   </div>
@@ -137,7 +137,7 @@
       length:80,
       logo:"/images/Postnauka-logo.png",
     }
-  ]
+  ];
   const roles = [
     {
       name: 'Консультант',
@@ -188,6 +188,81 @@
       left: 3
     }
   ];
+  const colleagues = [
+    {
+      id:0,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:1,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:2,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:3,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:4,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:5,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:6,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:7,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:8,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+
+  ];
 
   export default {
     components: {
@@ -206,7 +281,8 @@
         weightModal: false,
         roles,
         info,
-        partners
+        partners,
+        colleagues
       };
     },
     methods: {
