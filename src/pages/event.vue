@@ -12,7 +12,7 @@
     <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
     <EventSocials :socials="socials"/>
-    <EventAccepted :accepted="accepted">
+    <EventAccepted :accepted="accepted"/>
   </div>
 </template>
 
