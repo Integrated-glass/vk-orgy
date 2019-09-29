@@ -15,7 +15,7 @@
               Карма: {{ app.karma }}
               <br>
             </div>
-            <div> class="pricing-block-price subtitle">{{ app.experience }}</div>
+            <div class="pricing-block-price subtitle">{{ app.experience }}</div>
           </div>
 
           <ul class="pricing-feature-list w-list-unstyled">
