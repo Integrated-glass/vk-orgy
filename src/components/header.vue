@@ -2,7 +2,7 @@
   <header class="navbar w-nav">
     <div class="container-2 w-container">
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <button type="button" class="nav-link light w-nav-link">Мой музей</button>
+        <a href="https://polymus.ru/ru/" target="_blank" class="nav-link light w-nav-link">Мой музей</a>
         <router-link to="profile" class="nav-link light w-nav-link">Мой профиль</router-link>
         <router-link to="projects" class="nav-link light w-nav-link">Проекты</router-link>
         <router-link to="analytics" class="nav-link light w-nav-link">Аналитика</router-link>

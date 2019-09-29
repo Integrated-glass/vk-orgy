@@ -22,19 +22,37 @@
       <div class="process-tabs-line w-hidden-tiny"></div>
       <div data-duration-in="300" data-duration-out="100" class="process-tabs w-tabs">
         <div class="process-tab-menu w-tab-menu">
-          <a class="process-tab-button w-inline-block w-tab-link">
+          <button
+            @click="activeTab = 0"
+            :class="{'w--current': activeTab === 0}"
+            type="button"
+            class="process-tab-button w-inline-block w-tab-link"
+          >
             <img src="/images/age.png" alt="" class="process-tab-icon">
-            <div>Возраст</div>
-          </a><a class="process-tab-button w-inline-block w-tab-link">
-            <img src="/images/sputnic.png" alt="" class="process-tab-icon">
-            <div class="text-block-15">Спутник</div>
-          </a><a class="process-tab-button w-inline-block w-tab-link w--current">
-            <img src="/images/mus.png" alt="" class="process-tab-icon">
-            <div>Музеи</div>
-          </a>
+            Возраст
+          </button>
+          <button
+            @click="activeTab = 1"
+            :class="{'w--current': activeTab === 1}"
+            type="button"
+            class="process-tab-button w-inline-block w-tab-link"
+          >
+            <img src="/images/age.png" alt="" class="process-tab-icon">
+            Спутник
+          </button>
+          <button
+            @click="activeTab = 2"
+            :class="{'w--current': activeTab === 2}"
+            type="button"
+            class="process-tab-button w-inline-block w-tab-link"
+          >
+            <img src="/images/age.png" alt="" class="process-tab-icon">
+            Музеи
+          </button>
         </div>
+
         <div class="w-tab-content">
-          <div data-w-tab="Tab 1" class="process-tab-pane w-tab-pane">
+          <div :class="{'w--tab-active': activeTab === 0}" class="process-tab-pane w-tab-pane">
             <div class="div-block-32">
               <div>
                 <img src="/images/11222.png" height="290" alt="">
@@ -44,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="process-tab-pane w-tab-pane">
+          <div :class="{'w--tab-active': activeTab === 1}" class="process-tab-pane w-tab-pane">
             <div class="div-block-32">
               <div>
                 <img src="/images/33333.png" height="290" alt="">
@@ -52,11 +70,11 @@
               <div class="div-block-34"><img src="/images/4444.png" height="290" alt=""></div>
             </div>
           </div>
-          <div data-w-tab="Tab 3" class="process-tab-pane w-tab-pane w--tab-active">
+          <div :class="{'w--tab-active': activeTab === 2}" class="process-tab-pane w-tab-pane">
             <div class="process-tab-row w-row">
               <div class="process-tab-col-left w-col w-col-6">
-                <blockquote class="block-quote">Историю делают не пессимисты,<br> а
-                  оптимисты
+                <blockquote class="block-quote">
+                  Историю делают не пессимисты,<br> а оптимисты
                   <br>‍<br>
                   Митио Каку
                 </blockquote>
@@ -71,6 +89,7 @@
         </div>
       </div>
     </div>
+
     <div class="section">
       <div class="container w-container">
         <div class="map-and-form-wrapper w-clearfix">
@@ -82,7 +101,8 @@
           <div class="map-contact-form w-form">
             <form id="email-form" name="email-form" data-name="Email Form">
               <h2 class="section-title">Наша география</h2>
-              <div class="section-description">Человеку свойственно принимать границы собственного
+              <div class="section-description">
+                Человеку свойственно принимать границы собственного
                 кругозора за границы мира
                 <br><br>
                 Артур Шопенгауэр
@@ -118,11 +138,16 @@
 
 
 <script>
-    import Header from "../components/header";
+  import Header from "../components/header";
 
-    export default {
-        components: {Header}
-    }
+  export default {
+    components: {Header},
+    data() {
+      return {
+        activeTab: 0,
+      };
+    },
+  };
 </script>
 
 <style>
