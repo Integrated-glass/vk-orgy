@@ -9,143 +9,21 @@
         <div class="portfolio-list-wrapper w-dyn-list">
           <div class="portfolio-list w-clearfix w-dyn-items w-row">
             <div class="portfolio-item w-dyn-item w-col w-col-3">
-              <div class="portfolio-lightbox-overlay" style="opacity: 0; display: none;">
-                <div class="portfolio-image-wrapper">
-                  <a href="#" data-ix="close-lightbox" class="close-lightbox-button w-inline-block">
-                    <img
-                      src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
-                      alt=""
-                      class="lightbox-close-icon"
-                    >
-                  </a>
-                  <img
-                    src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52ea20075ae3408456f1_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%855.jpg"
-                    alt=""
-                    class="portfolio-image"
-                  >
-                </div>
-              </div>
               <a
                 href="#"
                 style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52ea20075ae3408456f1_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%855.jpg')"
                 class="portfolio-image-block w-inline-block"
               >
-                <div class="portfolio-overlay-block" style="opacity: 0; display: none;">
+                <div class="portfolio-overlay-block">
                   <div class="portfolio-overlay-content-wrapper">
-                    <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
+                    <div class="portfolio-block-title _1">
                       Polytech.Science.Art
                     </div>
-                    <div class="portfolio-block-subtitle" style="opacity: 0; transform: translateX(0px) translateY(10px) translateZ(0px);">
+                    <div class="portfolio-block-subtitle">
                       Ежегодная международная фестивальная неделя, посвященная взаимодействию
                       искусства, науки и технологий.
                     </div>
-                    <div class="button text-button" style="transition: background-color 0.2s ease 0s; opacity: 0;">Просмотр</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio-item w-dyn-item w-col w-col-3">
-              <div class="portfolio-lightbox-overlay" style="opacity: 0; display: none;">
-                <div class="portfolio-image-wrapper">
-                  <a href="#" class="close-lightbox-button w-inline-block">
-                    <img src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png" alt="" class="lightbox-close-icon">
-                  </a>
-                  <img
-                    src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e5106d39dc0b52b93541c_b744c860c5281f28dbed34dd0ff3ea30.jpg"
-                    alt=""
-                    class="portfolio-image"
-                  >
-                </div>
-              </div>
-              <a
-                href="#"
-                style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e5106d39dc0b52b93541c_b744c860c5281f28dbed34dd0ff3ea30.jpg&')"
-                class="portfolio-image-block w-inline-block"
-              >
-                <div
-                  class="portfolio-overlay-block"
-                  style="opacity: 0; display: none;"
-                >
-                  <div class="portfolio-overlay-content-wrapper">
-                    <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
-                      Фестиваль 360
-                    </div>
-                    <div class="portfolio-block-subtitle" style="opacity: 0; transform: translateX(0px) translateY(10px) translateZ(0px);">
-                      Масштабный фестиваль идей и открытий в науке и технологиях
-                    </div>
-                    <div class="button text-button" style="transition: background-color 0.2s ease 0s; opacity: 0;">Просмотр</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio-item w-dyn-item w-col w-col-3">
-              <div class="portfolio-lightbox-overlay" style="opacity: 0; display: none;">
-                <div class="portfolio-image-wrapper">
-                  <a href="#" class="close-lightbox-button w-inline-block">
-                    <img
-                      src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
-                      alt=""
-                      class="lightbox-close-icon"
-                    >
-                  </a>
-                  <img
-                    src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52aed39dc0384e936800_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%851%C2%A0%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%203.jpg"
-                    alt=""
-                    class="portfolio-image"
-                  >
-                </div>
-              </div>
-              <a
-                href="#"
-                style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52aed39dc0384e936800_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%851%C2%A0%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%203.jpg')"
-                class="portfolio-image-block w-inline-block"
-              >
-                <div class="portfolio-overlay-block" style="opacity: 0; display: none;">
-                  <div class="portfolio-overlay-content-wrapper">
-                    <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);">
-                      Фестиваль Политех
-                    </div>
-                    <div class="portfolio-block-subtitle" style="opacity: 0; transform: translateX(0px) translateY(10px) translateZ(0px);">
-                      Ежегодный тематический фестиваль под открытым небом
-                    </div>
-                    <div class="button text-button" style="transition: background-color 0.2s ease 0s; opacity: 0;">Просмотр</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio-item w-dyn-item w-col w-col-3">
-              <div class="portfolio-lightbox-overlay" style="opacity: 0; display: none;">
-                <div class="portfolio-image-wrapper">
-                  <a href="#" class="close-lightbox-button w-inline-block">
-                    <img
-                      src="https://assets.website-files.com/5d8e00e17b0ad79f3cb2c7a0/5d8e00e17b0ad7266eb2c8c3_Icon-close-thin.png"
-                      alt=""
-                      class="lightbox-close-icon"
-                    >
-                  </a>
-                  <img
-                    src="https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52f8167af6767511841d_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%856.jpg"
-                    alt=""
-                    class="portfolio-image"
-                  >
-                </div>
-              </div>
-              <a
-                href="#"
-                style="background-image:url('https://assets.website-files.com/5d8e00e17b0ad74319b2c7ab/5d8e52f8167af6767511841d_%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%856.jpg')"
-                class="portfolio-image-block w-inline-block"
-              >
-                <div class="portfolio-overlay-block" style="opacity: 0; display: none; transition: opacity 300ms;">
-                  <div class="portfolio-overlay-content-wrapper">
-                    <div class="portfolio-block-title _1" style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px); transform-style: preserve-3d; transition: opacity 300ms, transform 300ms;">
-                      Научные бои
-                    </div>
-                    <div class="portfolio-block-subtitle" style="opacity: 0; transform: translateX(0px) translateY(10px) translateZ(0px); transform-style: preserve-3d; transition: opacity 300ms, transform 300ms;">
-                      Молодые ученые наглядно и просто объясняют самые сложные научные идеи со сцены
-                    </div>
-                    <div class="button text-button" style="transition: background-color 0.2s ease 0s, opacity 300ms; opacity: 0;">
-                      Просмотр
-                    </div>
+                    <div class="button text-button">Просмотр</div>
                   </div>
                 </div>
               </a>
@@ -154,11 +32,13 @@
         </div>
       </div>
       <div>
-        <a href="#" class="button-2 w-button">
+        <router-link to="new-event" class="button-2 w-button">
           <strong>НОВОЕ МЕРОПРИЯТИЕ</strong>
-        </a>
+        </router-link>
       </div>
     </div>
+
+
     <div class="section top-line">
       <div class="container _444 w-container">
         <div class="section-title-wrapper">
@@ -201,8 +81,6 @@
         </div>
       </div>
     </div>
-
-
 
 
     <div class="section tint">
@@ -375,6 +253,8 @@
         </div>
       </div>
     </div>
+
+
     <div class="simple-footer">
       <div class="container w-container">
         <div class="footer-row w-row">
@@ -429,6 +309,31 @@
   .profile-main header {
     position: static !important;
   }
+</style>
 
+<style scoped>
+  .portfolio-item {
+    margin-top: 1em;
+  }
 
+  .portfolio-lightbox-overlay, .portfolio-overlay-block {
+    opacity: 0; display: none;
+  }
+
+  .portfolio-block-title, .portfolio-block-subtitle {
+    opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);
+  }
+
+  .portfolio-overlay-content-wrapper .button {
+    transition: background-color 0.2s ease 0s; opacity: 0;
+  }
+
+  .portfolio-item:hover .portfolio-overlay-block {
+    opacity: 1; display: block;
+  }
+
+  .portfolio-item:hover .portfolio-block-title, .portfolio-item:hover .portfolio-block-subtitle,
+  .portfolio-item:hover .portfolio-overlay-content-wrapper .button {
+    opacity: 1;
+  }
 </style>
