@@ -1,26 +1,16 @@
 <template>
-  <div id="intro" class="section feature-section">
+  <div class="section feature-section">
     <h1 class="heading-5">Соцсети</h1>
     <ul class="pricing-feature-list w-list-unstyled">
       <li class="pricing-feature-item">
-        <div>
+        <div
+          v-for="(soc, i) in socials"
+          :key="i"
+        >
           <img
-            src="/images/VK_Logo.png"
-            width="80"
-            height="80"
-            alt="">
-        </div>
-        <div>
-          <img
-            src="/images/fb.png"
-            width="80"
-            height="80"
-            alt="">
-        </div>
-        <div>
-          <img
-            src="/images/insta.png"
-            width="80"
+            :src="soc.image"
+            :width="soc.width"
+            :height="soc.length"
             alt="">
         </div>
       </li>

@@ -38,7 +38,7 @@
 
           <div class="pricing-block-content-wrapper bottom">
             <a href="/contact/contact-3" class="button white-pricing-button rej w-button">Отказать</a>
-            <a href="/contact/contact-3" class="button white-pricing-button w-button">Связаться vk</a>
+            <a href="https://vk.com/id170251896" target="_blank" class="button white-pricing-button w-button">Связаться vk</a>
           </div>
         </div>
       </div>
