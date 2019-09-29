@@ -12,12 +12,10 @@
             <div class="dropdown-icon w-icon-dropdown-toggle" />
           </div>
           <nav :class="{'w--open': eventDrop}" class="dropdown-list w-dropdown-list">
-            <router-link :to="{name: 'event'}" class="dropdown-link w-dropdown-link">ВК Хакатон</router-link>
-            <router-link :to="{name: 'event'}" class="dropdown-link w-dropdown-link">Шахматный турнир</router-link>
+            <router-link :to="{name: 'event', query: {id: 1}}" class="dropdown-link w-dropdown-link">Политех 360</router-link>
+            <router-link :to="{name: 'event', query: {id: 2}}" class="dropdown-link w-dropdown-link">Фестиваль Политех</router-link>
           </nav>
         </div>
-        <!--<router-link to="colleagues" class="nav-link light w-nav-link">Коллеги</router-link>
-        <router-link to="partners" class="nav-link light w-nav-link">Партнеры</router-link>-->
       </nav><img src="/images/logoPoly.png" alt="" class="image-4">
       <div class="transparant-menu-button w-nav-button">
         <div class="w-icon-nav-menu" />
@@ -27,8 +25,23 @@
 </template>
 
 <script>
+  import projectsQuery from '@/graphql/projects.graphql';
   export default {
     name: 'Header',
+    // apollo: {
+    //   projects() {
+    //     return {
+    //       query: projectsQuery,
+    //       variables: {
+    //         organizer_id: 6
+    //       },
+    //       update(data) {
+    //         console.log(data);
+    //         return [];
+    //       },
+    //     };
+    //   },
+    // },
     data() {
       return {
         eventDrop: false,
