@@ -203,7 +203,7 @@
       id:10,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'images/ира.jpg',
+      image:'images/1.jpg',
     },
     {
       id:2,
@@ -215,19 +215,19 @@
       id:3,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'images/ира.jpg',
+      image:'images/2.jpg',
     },
     {
       id:4,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'images/ира.jpg',
+      image:'images/3.jpg',
     },
     {
       id:5,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'images/ира.jpg',
+      image:'images/5.jpg',
     },
     {
       id:6,
@@ -241,7 +241,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'images/ира.jpg',
+      image:'images/1.jpg',
     },
     {
       id:8,
@@ -249,7 +249,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'images/ира.jpg',
+      image:'images/2.jpg',
     },
   ];
 
