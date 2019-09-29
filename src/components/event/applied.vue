@@ -5,32 +5,33 @@
       <div
         v-for="(app, i) in applied"
         :key="i"
-        class="pricing-column w-col w-col-4">
+        class="pricing-column w-col w-col-4"
+      >
         <div class="white-pricing-block">
           <div class="pricing-block-content-wrapper">
-
-            <div class="pricing-block-price">{{app.fullname}} </div>
-            <div class="pricing-block-price subtitle">{{app.age}}
+            <div class="pricing-block-price">{{ app.fullname }} </div>
+            <div class="pricing-block-price subtitle">{{ app.age }}
               <br>
             </div>
-            <div class="pricing-block-price subtitle">Карма: {{app.karma}}
+            <div class="pricing-block-price subtitle">
+              Карма: {{ app.karma }}
               <br>
             </div>
-            <div> class="pricing-block-price subtitle">{{app.experience}}</div>
+            <div> class="pricing-block-price subtitle">{{ app.experience }}</div>
           </div>
 
           <ul class="pricing-feature-list w-list-unstyled">
             <li class="pricing-feature-item">
               <div>
-                <div>{{app.role1}} ‍</div>
+                <div>{{ app.role1 }} ‍</div>
                 <a href="#" class="button-4 w-button">Выбрать</a>
               </div>
               <div>
-                <div>{{app.role2}}</div>
+                <div>{{ app.role2 }}</div>
                 <a href="#" class="button-4 w-button">Выбрать</a>
               </div>
               <div>
-                <div>{{app.role3}}</div>
+                <div>{{ app.role3 }}</div>
                 <a href="#" class="button-4 w-button">Выбрать</a>
               </div>
             </li>
@@ -42,7 +43,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -55,3 +55,9 @@
     }
   };
 </script>
+
+<style scoped>
+  .pricing-row {
+    overflow-x: scroll;
+  }
+</style>

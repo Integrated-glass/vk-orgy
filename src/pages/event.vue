@@ -9,10 +9,10 @@
     <EventTodo/>
     <EventRoles :roles="roles"/>
     <EventApplied :applied="applied"/>
+    <EventAccepted :accepted="accepted"/>
     <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
     <EventSocials :socials="socials"/>
-    <EventAccepted :accepted="accepted"/>
   </div>
 </template>
 

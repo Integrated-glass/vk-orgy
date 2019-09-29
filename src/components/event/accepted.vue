@@ -42,3 +42,9 @@
     }
   };
 </script>
+
+<style scoped>
+  .pricing-row {
+    overflow-x: scroll;
+  }
+</style>
