@@ -38,5 +38,8 @@
 <script>
   export default {
     name: 'EventSocials',
+    props: {
+      socials: Array,
+    }
   };
 </script>

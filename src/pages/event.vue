@@ -11,7 +11,7 @@
     <EventApplied/>
     <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
-    <EventSocials/>
+    <EventSocials :socials="socials"/>
   </div>
 </template>
 
@@ -261,7 +261,44 @@
       width:140,
       image:'',
     },
+  ];
 
+  const socials=[
+    {
+      id:0,
+      link:'https://vk.com/polytech.one1',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:1,
+      link:'https://www.facebook.com/polytech.one1/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:2,
+      link:'https://polymus.ru/ru/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:3,
+      link:'https://polymus.ru/ru/news/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:4,
+      link:'https://www.instagram.com/polytech.one/',
+      length:80,
+      width:80,
+      image:'',
+    }
   ];
 
   export default {
@@ -276,13 +313,15 @@
       EventInfo,
       Header
     },
+
     data() {
       return {
         weightModal: false,
         roles,
         info,
         partners,
-        colleagues
+        colleagues,
+        socials
       };
     },
     methods: {
