@@ -2,11 +2,11 @@ import Vue from 'vue';
 import VueApollo from 'vue-apollo';
 import {ApolloClient} from 'apollo-client';
 import {HttpLink} from 'apollo-link-http';
+import {GQL_HOST} from '@/constants';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 import {split} from 'apollo-link';
 import {getMainDefinition} from 'apollo-utilities';
 import store from '@/store/index';
-import {API_HOST} from '@/constants';
 
 const headers = {
     Authorization: `Token ${store.state.auth.token}`
@@ -14,7 +14,7 @@ const headers = {
 
 const httpLink = new HttpLink({
     // You should use an absolute URL here
-    uri: `${API_HOST}/v1/graphql`,
+    uri: `${GQL_HOST}`,
     headers
 });
 

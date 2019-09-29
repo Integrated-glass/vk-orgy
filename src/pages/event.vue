@@ -4,7 +4,7 @@
     <div class="image-hero busines-2">
       <div class="hero-block-overlay business-2"/>
     </div>
-    <EventInfo :info="info[0]" @toggleModal="toggleWeightModal"/>
+    <EventInfo :info="info[id-1]" @toggleModal="toggleWeightModal"/>
     <EventWeight @toggleModal="toggleWeightModal" class="modal-overlay"/>
     <EventTodo/>
     <EventRoles :roles="roles"/>
@@ -408,8 +408,15 @@
         colleagues,
         socials,
         applied,
-        accepted
+        accepted,
+        id: 0,
       };
+    },
+    watch: {
+      $route() {
+        console.log(this.$route.query.id);
+        this.id = this.$route.query.id;
+      }
     },
     methods: {
       toggleWeightModal() {
