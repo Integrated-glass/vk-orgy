@@ -197,43 +197,43 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:10,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:2,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/руки_вверх.jpg',
     },
     {
       id:3,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:4,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:5,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:6,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:7,
@@ -241,7 +241,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
     {
       id:8,
@@ -249,7 +249,7 @@
       descr:'Привлечение учёных для пиара в соцсетях',
       length:140,
       width:140,
-      image:'',
+      image:'images/ира.jpg',
     },
   ];
 
@@ -257,27 +257,27 @@
     {
       id:0,
       link:'https://vk.com/polytech.one1',
-      image:'',
+      image:'/images/vkontakte_PNG3.png',
     },
     {
       id:1,
       link:'https://www.facebook.com/polytech.one1/',
-      image:'',
+      image:'/images/fb.png',
     },
     {
       id:2,
       link:'https://polymus.ru/ru/',
-      image:'',
+      image:'/images/logoPoly.png',
     },
     {
       id:3,
       link:'https://polymus.ru/ru/news/',
-      image:'',
+      image:'/images/logoPoly.png',
     },
     {
       id:4,
       link:'https://www.instagram.com/polytech.one/',
-      image:'',
+      image:'/images/insta.png',
     }
   ];
 
