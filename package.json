@@ -5,6 +5,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "fix": "eslint . --fix",
     "start": "vue-cli-service serve --more production",
     "deploy": "npm run build && now"
   },
