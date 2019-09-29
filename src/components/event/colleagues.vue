@@ -15,184 +15,74 @@
             <div>Планирование</div>
           </a>
         </div>
+
         <div class="w-tab-content">
           <div class="portfolio-tab-pane w-tab-pane">
             <div class="div-block-15">
-              <div class="div-block-16">
+              <div
+                v-for="(coll, i) in colleagues"
+                :key="i"
+                class="div-block-16">
                 <div>
                   <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
+                    :src = "coll.image"
+                    :width = "coll.width"
+                    :height = "coll.length"
                     alt="">
                 </div>
                 <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
+                  <a href="#" class="link-2">{{coll.fullname}}
                     <br>‍
                   </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях</div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
+                  <div class="text-block-12">{{coll.descr}}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-w-tab="App Design" class="portfolio-tab-pane w-tab-pane w--tab-active">
+
+          <div class="portfolio-tab-pane w-tab-pane w--tab-active">
             <div class="div-block-15">
-              <div class="div-block-16">
+              <div
+                v-for="(coll, i) in colleagues"
+                :key="i"
+                class="div-block-16">
                 <div>
                   <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
+                    :src = "coll.image"
+                    :width = "coll.width"
+                    :height = "coll.length"
                     alt="">
                 </div>
                 <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
+                  <a href="#" class="link-2">{{coll.fullname}}
                     <br>‍
                   </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Иван Боганцев
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Организация
-                    <br>благотворительных
-                    <br>мероприятий
-                    <br>в рамках фестиваля
+                  <div class="text-block-12">{{coll.descr}}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-w-tab="Graphic Design" class="portfolio-tab-pane w-tab-pane">
+
+          <div class="portfolio-tab-pane w-tab-pane">
             <div class="div-block-15">
-              <div class="div-block-16">
+              <div class="div-block-16"
+                   v-for="(coll, i) in colleagues"
+                   :key="i"
+              >
                 <div>
                   <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
+                    :src = "coll.image"
+                    :width = "coll.width"
+                    :height = "coll.length"
                     alt="">
                 </div>
                 <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
+                  <a href="#" class="link-2">{{coll.fullname}}
                     <br>
                     ‍</a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-16">
-                <div>
-                  <img
-                    src="/images/ира.jpg"
-                    width="140"
-                    height="140"
-                    alt="">
-                </div>
-                <div class="div-block-17">
-                  <a href="#" class="link-2">Ирина Белых
-                    <br>‍
-                  </a>
-                  <div class="text-block-12">Привлечение
-                    <br>учёных
-                    <br>для пиара
-                    <br>в соцсетях
+                  <div class="text-block-12">{{coll.descr}}
                   </div>
                 </div>
               </div>
@@ -207,5 +97,8 @@
 <script>
   export default {
     name: 'EventColleagues',
+    props: {
+      colleagues: Array,
+    }
   };
 </script>

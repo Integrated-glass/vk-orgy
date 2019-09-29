@@ -9,9 +9,9 @@
     <EventTodo/>
     <EventRoles :roles="roles"/>
     <EventApplied/>
-    <EventColleagues/>
+    <EventColleagues :colleagues="colleagues"/>
     <EventPartners :partners="partners"/>
-    <EventSocials/>
+    <EventSocials :socials="socials"/>
   </div>
 </template>
 
@@ -85,59 +85,59 @@
       id:0,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:1,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:2,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:3,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:4,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:5,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:6,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     },
     {
       id:7,
       width:140,
       // link:,
-      length:140,
+      length:80,
       logo:"/images/Postnauka-logo.png",
     }
-  ]
+  ];
   const roles = [
     {
       name: 'Консультант',
@@ -188,6 +188,121 @@
       left: 3
     }
   ];
+  const colleagues = [
+    {
+      id:0,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:1,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:2,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:3,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:4,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:5,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:6,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:7,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+    {
+      id:8,
+      fullname:'Ирина Белых',
+      descr:'Привлечение учёных для пиара в соцсетях',
+      length:140,
+      width:140,
+      image:'',
+    },
+  ];
+
+  const socials=[
+    {
+      id:0,
+      link:'https://vk.com/polytech.one1',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:1,
+      link:'https://www.facebook.com/polytech.one1/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:2,
+      link:'https://polymus.ru/ru/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:3,
+      link:'https://polymus.ru/ru/news/',
+      length:80,
+      width:80,
+      image:'',
+    },
+    {
+      id:4,
+      link:'https://www.instagram.com/polytech.one/',
+      length:80,
+      width:80,
+      image:'',
+    }
+  ];
+
+  const applied=[];
+  const accepted=[];
 
   export default {
     components: {
@@ -201,12 +316,17 @@
       EventInfo,
       Header
     },
+
     data() {
       return {
         weightModal: false,
         roles,
         info,
-        partners
+        partners,
+        colleagues,
+        socials,
+        applied,
+        accepted
       };
     },
     methods: {

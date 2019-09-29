@@ -27,7 +27,7 @@
         <div class="text-block-4">{{ info.ageRestr }}</div>
         <div class="text-block-5">{{ info.descr }}
         </div>
-        <a href="#" class="button-3 w-button">Редактировать</a>
+        <router-link to="new-event" class="button-3 w-button">Редактировать</router-link>
       </div>
     </div>
   </div>
