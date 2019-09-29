@@ -200,51 +200,39 @@
       image:'',
     },
     {
-      id:1,
+      id:10,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
       id:2,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
       id:3,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
       id:4,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
       id:5,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
       id:6,
       fullname:'Ирина Белых',
       descr:'Привлечение учёных для пиара в соцсетях',
-      length:140,
-      width:140,
       image:'',
     },
     {
@@ -269,36 +257,26 @@
     {
       id:0,
       link:'https://vk.com/polytech.one1',
-      length:80,
-      width:80,
       image:'',
     },
     {
       id:1,
       link:'https://www.facebook.com/polytech.one1/',
-      length:80,
-      width:80,
       image:'',
     },
     {
       id:2,
       link:'https://polymus.ru/ru/',
-      length:80,
-      width:80,
       image:'',
     },
     {
       id:3,
       link:'https://polymus.ru/ru/news/',
-      length:80,
-      width:80,
       image:'',
     },
     {
       id:4,
       link:'https://www.instagram.com/polytech.one/',
-      length:80,
-      width:80,
       image:'',
     }
   ];
@@ -352,7 +330,7 @@
       experience:"Консультант на площадке, постоянный волонтёр на экспозициях Гаража.",
       role1:"Кольсунтант",
       role2:"Ведущий мастер-класса",
-      role3:"Ведущий дискусстт"
+      role3:"Ведущий дискуссии"
     }
   ];
 

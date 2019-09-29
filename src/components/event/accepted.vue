@@ -16,8 +16,8 @@
               <div class="div-block-18">
                 <img
                   :src = "acc.image"
-                  :width = "acc.width"
-                  :height = "acc.length"
+                  width = "80"
+                  height = "80"
                   alt="">
               </div>
             </div>

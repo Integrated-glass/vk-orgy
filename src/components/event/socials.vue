@@ -9,8 +9,8 @@
         >
           <img
             :src="soc.image"
-            :width="soc.width"
-            :height="soc.length"
+            width="80"
+            height="80"
             alt="">
         </div>
       </li>
