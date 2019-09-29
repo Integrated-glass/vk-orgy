@@ -1,7 +1,7 @@
 <template>
   <div class="profile-main">
     <Header/>
-    <MyProfile :profile="profile"/>
+    <MyProfile :profile="profile" />
 
     <div class="section top-line">
       <div class="container _444 w-container">
@@ -264,9 +264,9 @@
 </template>
 
 <script>
-  import Prof from '@/components/profile/my_profile';
   import Header from '@/components/header';
   import MyProfile from "../components/profile/my_profile";
+
   const profile=[
     {
       name:"Polytech.Science.Art",
@@ -312,26 +312,5 @@
 <style scoped>
   .portfolio-item {
     margin-top: 1em;
-  }
-
-  .portfolio-lightbox-overlay, .portfolio-overlay-block {
-    opacity: 0; display: none;
-  }
-
-  .portfolio-block-title, .portfolio-block-subtitle {
-    opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0px);
-  }
-
-  .portfolio-overlay-content-wrapper .button {
-    transition: background-color 0.2s ease 0s; opacity: 0;
-  }
-
-  .portfolio-item:hover .portfolio-overlay-block {
-    opacity: 1; display: block;
-  }
-
-  .portfolio-item:hover .portfolio-block-title, .portfolio-item:hover .portfolio-block-subtitle,
-  .portfolio-item:hover .portfolio-overlay-content-wrapper .button {
-    opacity: 1;
   }
 </style>
