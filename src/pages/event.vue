@@ -341,7 +341,7 @@
       role:'Фотограф',
       length:140,
       width:140,
-      image:''
+      image:'/images/катя-огонь.jpg'
     },
     {
       id:1,
@@ -349,7 +349,7 @@
       role:'Ведущий дискуссии',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:2,
@@ -357,7 +357,7 @@
       role:'Стажёр-историк',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:3,
@@ -365,7 +365,7 @@
       role:'Консультант',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:4,
@@ -373,7 +373,7 @@
       role:'Аниматор',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     },
     {
       id:5,
@@ -381,7 +381,7 @@
       role:'Ведущий мастер-класса',
       length:140,
       width:140,
-      image:''
+      image:'/images/лена-доброволец.jpg'
     }
   ];
 

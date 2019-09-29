@@ -9,10 +9,8 @@
       >
         <div class="white-pricing-block">
           <div class="pricing-block-content-wrapper">
-            <div class="pricing-block-price">{{ app.fullname }} </div>
-            <div class="pricing-block-price subtitle">{{ app.age }}
-              <br>
-            </div>
+            <div class="pricing-block-price">{{app.fullname}}</div>
+            <div class="pricing-block-price subtitle">Возраст: {{ app.age }}</div>
             <div class="pricing-block-price subtitle">
               Карма: {{ app.karma }}
               <br>
